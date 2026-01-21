@@ -1,6 +1,7 @@
 # Engineering Sketches
-Sketches for micromouse development.
+
+- Sketches for micromouse development
+
 - May include:
-    - Engineering development infrastructure sketches
-    - Software architecture sketches
-    - Hardware component sketches
+  - Engineering development infrastructure (tools we use and how they're relevant) sketches
+  - Software architecture sketches
