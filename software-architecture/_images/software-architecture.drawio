@@ -30,9 +30,6 @@
         <mxCell id="VA4gKk7P2Ic-5W_0SB8y-47" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;at32uc3l0256_drivers&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Library)&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="180" x="530" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="hCXN4IzAGQTOALLmFSug-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#006600;" value="&lt;b&gt;runtime_error.h&lt;/b&gt;" vertex="1">
-          <mxGeometry height="50" width="120" x="850" y="410" as="geometry" />
-        </mxCell>
         <mxCell id="UwXl0KZfzIKj5EyUJe6f-31" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#0066CC;" value="&lt;div&gt;mouse_simulator&lt;/div&gt;&lt;div&gt;&lt;hr&gt;(C++ Executable)&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="170" x="40" y="120" as="geometry" />
         </mxCell>
@@ -62,14 +59,6 @@
         <mxCell id="0X-RFWdOt0fxIYuZUrhn-11" edge="1" parent="1" source="UwXl0KZfzIKj5EyUJe6f-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=45;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="VA4gKk7P2Ic-5W_0SB8y-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0X-RFWdOt0fxIYuZUrhn-17" edge="1" parent="1" source="0X-RFWdOt0fxIYuZUrhn-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="hCXN4IzAGQTOALLmFSug-22">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="770" y="350" />
-              <mxPoint x="910" y="350" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="0X-RFWdOt0fxIYuZUrhn-13" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;...&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;(All User C Libraries &amp;amp; Executable)&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="170" x="685" y="230" as="geometry" />
         </mxCell>
@@ -91,6 +80,12 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="310" y="585" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="M42v7twJ1mtuAuClNUq2-1" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;runtime_diagnostics&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Header + Sources)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="850" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="M42v7twJ1mtuAuClNUq2-2" edge="1" parent="1" source="0X-RFWdOt0fxIYuZUrhn-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;" target="M42v7twJ1mtuAuClNUq2-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

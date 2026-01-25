@@ -4,6 +4,13 @@ Below is a sketch of the software packages that make up the micromouse motherboa
 
 ![software-architecture.drawio](_images/software-architecture.drawio.png)
 
+## `runtime_diagnositcs`
+
+![runtime_diagnostics](_images/runtime_diagnostics.drawio.png)
+
+- Minimal header w/ macros for reporting runtime telemetry, warnings, and errors
+- Allows for interfaces that follow command-query separation, and provides a lightweight method of runtime error handling for the entire codebase
+
 ## `at32uc3l0256_drivers`
 
 - AT32UC3L0256 drivers wrapped to adhere to the hardware abstraction layer
