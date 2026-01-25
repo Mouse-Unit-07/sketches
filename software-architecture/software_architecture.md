@@ -8,6 +8,7 @@ Below is a sketch of the software packages that make up the micromouse motherboa
 
 - AT32UC3L0256 drivers wrapped to adhere to the hardware abstraction layer
 - This layer changes upon switching the motherboard MCU/processor
+- The HAL implementation changes if any HAL contracts are modified
 
 ## `hardware_abstraction_layer`
 
@@ -15,21 +16,14 @@ Below is a sketch of the software packages that make up the micromouse motherboa
 
 - Middleware to abstract hardware peripherals/components on a processor like adc, clock, gpio, etc
 - Forces low level drivers to adhere to this HAL via dependency inversion
-- This layer may expand to support new hardware components on the current and new processors, but shouldn't be swapped otherwise
-
-## `processor`
-
-![processor](_images/processor.drawio.png)
-
-- Defines the processor and all external devices critical for debugging
-- Shouldn't have to swap regardless of what processor is being used
+- This layer may expand to support new hardware peripherals on the current processor or new processors, but shouldn't be swapped otherwise
 
 ## `device_drivers`
 
 ![device_drivers](_images/device_drivers.drawio.png)
 
-- Defines all external hardware components
-- This layer changes upon switching external hardware devices on the motherboard
+- Defines all external hardware components, as well as the processor itself
+- This layer may expand to support new hardware components on the motherboard, but shouldn't be swapped otherwise
 
 ## `mouse_drivers`
 

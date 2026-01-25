@@ -55,13 +55,13 @@
           <mxGeometry height="80" width="220" y="36" as="geometry" />
         </mxCell>
         <mxCell id="qFmJLVRTqTorrICbb9q3-15" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="external_interrupt_controller" vertex="1">
-          <mxGeometry height="96" width="260" x="650" y="270" as="geometry" />
+          <mxGeometry height="96" width="440" x="650" y="270" as="geometry" />
         </mxCell>
         <mxCell id="qFmJLVRTqTorrICbb9q3-16" parent="qFmJLVRTqTorrICbb9q3-15" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="10" width="260" y="26" as="geometry" />
+          <mxGeometry height="10" width="440" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="qFmJLVRTqTorrICbb9q3-17" parent="qFmJLVRTqTorrICbb9q3-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ init_external_interrupt(void): void&lt;div&gt;+ deinit_external_interrupt(void): void&lt;/div&gt;&lt;div&gt;+ is_external_interrupt_initialized(void): bool&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="260" y="36" as="geometry" />
+        <mxCell id="qFmJLVRTqTorrICbb9q3-17" parent="qFmJLVRTqTorrICbb9q3-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ init_external_interrupt(void): void&lt;div&gt;+ deinit_external_interrupt(void): void&lt;/div&gt;&lt;div&gt;+ set_external_callback(&lt;span style=&quot;background-color: transparent;&quot;&gt;uint32_t line,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;external_callback_function callback&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): void&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="440" y="36" as="geometry" />
         </mxCell>
         <mxCell id="qFmJLVRTqTorrICbb9q3-18" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="internal_interrupt_controller" vertex="1">
           <mxGeometry height="116" width="270" x="80" y="420" as="geometry" />
@@ -89,17 +89,17 @@
         <mxCell id="qFmJLVRTqTorrICbb9q3-25" parent="qFmJLVRTqTorrICbb9q3-24" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="10" width="420" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="qFmJLVRTqTorrICbb9q3-26" parent="qFmJLVRTqTorrICbb9q3-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ init_pwm(void): void&lt;div&gt;+ deinit_pwm(void): void&lt;br&gt;&lt;div&gt;+ set_duty_cycle_percent(uint32_t pwm_number, uint32_t duty_cycle): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="qFmJLVRTqTorrICbb9q3-26" parent="qFmJLVRTqTorrICbb9q3-24" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ init_pwm(void): void&lt;div&gt;+ deinit_pwm(void): void&lt;br&gt;&lt;div&gt;+ set_duty_cycle_percent(uint32_t line, uint32_t percent): void&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="420" y="36" as="geometry" />
         </mxCell>
         <mxCell id="qFmJLVRTqTorrICbb9q3-27" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="timer_counter" vertex="1">
-          <mxGeometry height="96" width="230" x="80" y="570" as="geometry" />
+          <mxGeometry height="110" width="230" x="80" y="570" as="geometry" />
         </mxCell>
         <mxCell id="qFmJLVRTqTorrICbb9q3-28" parent="qFmJLVRTqTorrICbb9q3-27" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="10" width="230" y="26" as="geometry" />
         </mxCell>
-        <mxCell id="qFmJLVRTqTorrICbb9q3-29" parent="qFmJLVRTqTorrICbb9q3-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ init_timer_counter(void): void&lt;div&gt;+ deinit_timer_counter(void): void&lt;/div&gt;&lt;div&gt;+ get_timer_count(void): uint32_t&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="230" y="36" as="geometry" />
+        <mxCell id="qFmJLVRTqTorrICbb9q3-29" parent="qFmJLVRTqTorrICbb9q3-27" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ init_timer_counter(void): void&lt;div&gt;+ deinit_timer_counter(void): void&lt;/div&gt;&lt;div&gt;+ get_timer_count(void): uint32_t&lt;/div&gt;&lt;div&gt;+ restart_timer(void): void&lt;/div&gt;" vertex="1">
+          <mxGeometry height="74" width="230" y="36" as="geometry" />
         </mxCell>
         <mxCell id="qFmJLVRTqTorrICbb9q3-30" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="usart" vertex="1">
           <mxGeometry height="86" width="230" x="330" y="570" as="geometry" />
