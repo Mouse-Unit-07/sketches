@@ -4,8 +4,8 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="wOMtGdxW-GEQhh6y-wTj-1" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;runtime_diagnostics&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;runtime_diagnostics.h&lt;/div&gt;&lt;div&gt;runtime_diagnostics.c&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;runtime_diagnostics_print.c&lt;/div&gt;" vertex="1">
-          <mxGeometry height="140" width="200" x="260" y="170" as="geometry" />
+        <mxCell id="wOMtGdxW-GEQhh6y-wTj-1" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;runtime_diagnostics&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;runtime_diagnostics.h&lt;/div&gt;&lt;div&gt;runtime_diagnostics.c&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="260" y="170" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
