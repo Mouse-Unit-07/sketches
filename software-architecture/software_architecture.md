@@ -1,15 +1,14 @@
 # Software Architecture
 
-Below is a sketch of the software packages that make up the micromouse motherboard firmware.
-
+- Dependency diagram of libraries that make up the micromouse motherboard firmware:
 ![software-architecture.drawio](_images/software-architecture.drawio.png)
 
 ## `runtime_diagnositcs`
 
 ![runtime_diagnostics](_images/runtime_diagnostics.drawio.png)
 
-- Minimal header w/ macros for reporting runtime telemetry, warnings, and errors
-- Allows for interfaces that follow command-query separation, and provides a lightweight method of runtime error handling for the entire codebase
+- Minimal library for reporting runtime telemetry, warnings, and errors
+- Allows for code w/ command-query separation and clean runtime handling across all libraries
 
 ## `at32uc3l0256_drivers`
 
