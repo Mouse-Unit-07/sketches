@@ -1,6 +1,6 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36">
   <diagram name="Page-1" id="oKpc1l_Igcs4GMacKgKO">
-    <mxGraphModel dx="1097" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1212" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,16 +10,13 @@
         <mxCell id="VA4gKk7P2Ic-5W_0SB8y-11" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;hardware_abstraction_layer&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Library)&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="180" x="455" y="520" as="geometry" />
         </mxCell>
-        <mxCell id="VA4gKk7P2Ic-5W_0SB8y-24" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;mouse_drivers&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Library)&lt;/div&gt;" vertex="1">
+        <mxCell id="VA4gKk7P2Ic-5W_0SB8y-24" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;mouse_driver&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Library)&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="110" x="340" y="390" as="geometry" />
         </mxCell>
         <mxCell id="VA4gKk7P2Ic-5W_0SB8y-35" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;maze_solver&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Library)&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="110" x="265" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="VA4gKk7P2Ic-5W_0SB8y-38" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;shell&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Library)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="90" width="110" x="415" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="VA4gKk7P2Ic-5W_0SB8y-45" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;mouse&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Executable)&lt;/div&gt;" vertex="1">
+        <mxCell id="VA4gKk7P2Ic-5W_0SB8y-45" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;application&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Executable)&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="170" x="310" y="120" as="geometry" />
         </mxCell>
         <mxCell id="0X-RFWdOt0fxIYuZUrhn-1" edge="1" parent="1" source="VA4gKk7P2Ic-5W_0SB8y-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=180;entryDy=65;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=65;exitPerimeter=0;" target="VA4gKk7P2Ic-5W_0SB8y-11">
@@ -47,14 +44,19 @@
         <mxCell id="0X-RFWdOt0fxIYuZUrhn-5" edge="1" parent="1" source="VA4gKk7P2Ic-5W_0SB8y-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;" target="VA4gKk7P2Ic-5W_0SB8y-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0X-RFWdOt0fxIYuZUrhn-6" edge="1" parent="1" source="VA4gKk7P2Ic-5W_0SB8y-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;" target="VA4gKk7P2Ic-5W_0SB8y-24">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="0X-RFWdOt0fxIYuZUrhn-7" edge="1" parent="1" source="VA4gKk7P2Ic-5W_0SB8y-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;" target="VA4gKk7P2Ic-5W_0SB8y-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="0X-RFWdOt0fxIYuZUrhn-8" edge="1" parent="1" source="VA4gKk7P2Ic-5W_0SB8y-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=40;entryDy=0;entryPerimeter=0;" target="VA4gKk7P2Ic-5W_0SB8y-38">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="0X-RFWdOt0fxIYuZUrhn-8" edge="1" parent="1" source="VA4gKk7P2Ic-5W_0SB8y-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="395" y="240" />
+              <mxPoint x="490" y="240" />
+              <mxPoint x="490" y="370" />
+              <mxPoint x="380" y="370" />
+            </Array>
+            <mxPoint x="380" y="390" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="0X-RFWdOt0fxIYuZUrhn-10" parent="1" style="shape=folder;fontStyle=1;tabWidth=80;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;whiteSpace=wrap;strokeColor=#006600;" value="&lt;div&gt;AT32 C99&amp;nbsp;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: transparent;&quot;&gt;Standard Library&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;hr&gt;&lt;/div&gt;&lt;div&gt;(C Library)&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="240" x="570" y="370" as="geometry" />
