@@ -41,8 +41,8 @@
 
 ![mouse_driver](_images/mouse_driver.drawio.png)
 
-- Interface to control the micromouse for movement and control
-- Also provides interfaces device drivers testing
+- Libraries to interface w/ the mouse as a whole
+- Also provides functions to test each individual device on the mouse
 
 ## `maze_solver`
 
