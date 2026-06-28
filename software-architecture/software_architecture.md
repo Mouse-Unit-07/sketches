@@ -1,6 +1,6 @@
 # Software Architecture
 
-- Dependency diagram of libraries that make up the micromouse motherboard firmware:
+- Dependency diagram of all software components in this micromouse project:
 ![software-architecture.drawio](_images/software-architecture.drawio.png)
 
 ## `runtime_diagnositcs`
@@ -13,22 +13,22 @@
 ## `at32uc3l0256_drivers`
 
 - AT32UC3L0256 drivers wrapped to adhere to the hardware abstraction layer
-- This layer changes upon switching the motherboard MCU/processor
+- This layer can be changed upon switching the motherboard MCU/processor, processor SDK updates, etc
 - The HAL implementation changes if any HAL contracts are modified
 
 ## `hardware_abstraction_layer`
 
 ![hardware_abstraction_layer](_images/hardware_abstraction_layer.drawio.png)
 
-- Middleware to abstract hardware peripherals/components on a processor like adc, clock, gpio, etc
-- Forces low level drivers to adhere to this HAL via dependency inversion
+- Contracts to abstract hardware peripherals/components on a processor like adc, clock, gpio, etc
+- Forces low level drivers to adhere to this HAL enforcing dependency inversion
 - This layer may expand to support new hardware peripherals on the current processor or new processors, but shouldn't be swapped otherwise
 
 ## `device_drivers`
 
 ![device_drivers](_images/device_drivers.drawio.png)
 
-- Defines all external hardware components, as well as the processor itself
+- Defines all hardware components, plus the processor itself
 - This layer may expand to support new hardware components on the motherboard, but shouldn't be swapped otherwise
 
 ## `mouse_simulator`
@@ -41,7 +41,7 @@
 
 ![mouse_driver](_images/mouse_driver.drawio.png)
 
-- Libraries to interface w/ the mouse as a whole
+- Libraries to interface w/ the mouse as a single hardware device
 - Also provides functions to test each individual device on the mouse
 
 ## `maze_solver`
@@ -55,4 +55,4 @@
 ![application](_images/application.drawio.png)
 
 - Final executable to be deployed to micromouse hardware
-- Command line interface for testing
+- Libraries include: startup for init, shell for testing over serial, configuration for all startup/runtime configuration

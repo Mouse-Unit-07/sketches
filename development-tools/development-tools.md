@@ -14,20 +14,12 @@
 - Dependency/deployment diagram of all tools and platforms:
 ![development-tools](_images/development-tools.drawio.png)
 
-1. Fetch project files to begin development
-2. Make source code changes, and upon careful review and building/testing for both MCU/Windows development platform, push source code changes
-3. Pull up-to-date source code from GitHub and build source code to generate binaries
+1. Clone project into software development repo to begin development
+2. Make source code changes, build/test for both MCU/Windows, push source code changes
+3. Pull up-to-date source code from GitHub and generate binaries
 4. Deploy firmware to micromouse over JTAG
-- These tools should be solutions to:
-  - Manage development and integration of all software parts
-  - Allow anyone to work on anything independently w/ no waiting for others or hardware
-  - Avoid asking critical questions at the end when all development parts are coming together
-  - Eliminating crunch time debug sessions
-- We can change anything if we find that we're using the wrong approach
 
 ## GitHub Organizations
-
-- A central location for everything related to our micromouse development
 
 - **Mouse Unit 07 Kanban**
   - Allows for smaller chunks of development to keep things moving in parallel
@@ -50,7 +42,7 @@
   - Unified build configuration generator- configures and builds projects in place of an IDE
   - Allows for:
     - Easy swapping of implementation files- decouples build target control from source code
-    - Automated builds over command line
+    - Fast/uniform builds over command line
     - Running unit tests w/ builds
 - **CppUTest**
   - C/C++ unit testing harness
